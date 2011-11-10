@@ -8,10 +8,11 @@ sfMelodyDemo includes for now :
  * Signup with twitter
  * Customizable User Account creation
 
+This demo is still under work.
 
 ## Configuration ##
 
-    For more configuration, check the [sfMelodyPlugin README](https://github.com/chok/sfMelodyPlugin) section.
+For more configuration, check the [sfMelodyPlugin](https://github.com/chok/sfMelodyPlugin)  README section.
 
 User Extra Data :
 
@@ -97,3 +98,7 @@ options in app.yml  :
               call: me
               path: id
               key: true
+
+## Contribute ##
+This project is made for you all. You can ask or contribute on Github : http://github.com/chok/sfMelodyPlugin.
+Feel free to enhance this demo and add new Melodies.

@@ -1,0 +1,29 @@
+User:
+  inheritance:
+    extends: sfGuardUser
+    type: simple
+  columns:
+    fb_name:
+      type: string(255)
+      notnull: false
+    fb_id:
+      type: integer
+      notnull: false
+    gender:
+      type: string(6)
+      notnull: false
+    birthday:
+      type: date
+      notnull: false
+    locations:
+      type: string(255)
+      notnull: false
+    twitter_id:
+      type: integer
+      notnull: false
+    twitter_oauth_token:
+      type : string(200)
+      notnull: false
+    twitter_oauth_token_secret:
+      type : string(200)
+      notnull: false

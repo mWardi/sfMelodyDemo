@@ -1,0 +1,55 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  melody:
+#    create_user: true
+    redirect_register: '@melody_signup'
+
+    facebook:
+      key: 286642281368139
+      secret: 465cc8da4ab8dac40b9a7d1c1d081345
+      callback: http://sfmelodydemo.dev/frontend_dev.php/
+      scope: [email,user_birthday]
+
+      user:
+        fb_id:
+          call: me
+          path: id
+          key: true
+        username:
+          call: me
+          path: username
+        first_name:
+          call: me
+          path: first_name
+        last_name:
+          call: me
+          path: last_name
+        email_address:
+          call: me
+          path: email
+          key: true
+        fb_name:
+          call: me
+          path: name
+        birthday:
+          call: me
+          path: birthday
+        locations:
+          call: me
+          path: location/name
+
+    twitter:
+      key: 5HlKFHigyFcmOjvB4ixWw
+      secret: 5MVjsyDgQS02Gl0uwu57OOpIEmHb9FEBc9cM4oP74
+      callback: http://sfmelodydemo.dev/frontend_dev.php/
+      user:
+        username:
+          call: me
+          path: screen_name
+        twitter_id:
+          call: me
+          path: id
+          key: true

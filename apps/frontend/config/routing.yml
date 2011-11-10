@@ -1,0 +1,34 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+#oauth rules
+fb_connect:
+  url: /facebook/connect
+  param: {module: sfMelody, action: facebookConnect }
+twitter_connect:
+  url: /twitter/connect
+  param: {module: sfMelody, action: twitterConnect }
+melody_signup:
+  url: /social/signup
+  param: {module: sfMelody, action: signup }
+
+session_clear:
+  url: /session/clear
+  param: {module: sfMelody, action: clearSession }
+session_check:
+  url: /session/check
+  param: {module: sfMelody, action: checkSession }
+  
+# default rules
+homepage:
+  url:   /
+  param: { module: demo, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

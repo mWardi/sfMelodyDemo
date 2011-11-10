@@ -1,0 +1,26 @@
+---
+Token:
+  columns:
+    id: 
+      type: integer
+      primary: true
+      autoincrement: true
+    name: string(127)
+    token_key: clob
+    token_secret: clob
+    user_id: integer
+    expire: integer(11)
+    params: clob
+    identifier: string(255)
+    status: string(127)
+    o_auth_version: integer(2)
+  relations: 
+    User:
+      class: sfGuardUser
+      type: one
+      foreignType: many
+      local: user_id
+      foreign: id
+      foreignAlias: Tokens
+  actAs:
+    Timestampable: ~
